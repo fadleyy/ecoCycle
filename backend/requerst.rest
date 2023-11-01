@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmVkMjE3Zi01OGIzLTQ3NmYtYmFiMS05MmZmZWMyMDFmN2MiLCJuaWsiOiIyMzQ1Njc4IiwibmFtZSI6InN1bHRhbiIsImVtYWlsIjoic3VsdGFuQGdtYWlsLmNvbSIsImlhdCI6MTY5ODg0ODQ4MSwiZXhwIjoxNjk4ODQ4NDk2fQ.ff7372oclV1QIj-rK85f9G2wwRQf8pkJb7LLNWwk0hs
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "nik": "18347184783",
+    "name": "fadli",
+    "email": "fadli@gmail.com",
+    "password": "fadli123",
+    "confPassword": "fadli12"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "name": "fadli",
+    "password": "fadli123"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
